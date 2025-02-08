@@ -5,6 +5,7 @@
         <meta name="keywords" content="INFO1601, uwi, web">
         <title>My First Page</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!--I commented out style.css during the lab because it wasn't matching the lab but I uncommented after-->
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -40,6 +41,33 @@
                 <cite>citation</cite><br>
                 <dfn>definition</dfn>
             </section>
+
+            <section>
+                <figure>
+                    <img src="https://lorempixel.com/200/200/cats" alt="a random cat">
+                    <figcaption>Fig 1. A random cat</figcaption>
+                </figure>
+           </section>
+           <section>
+            <details>
+                <summary>Hobbies</summary>
+                <ul>
+                 <li>Swimming</li>
+                 <li>Coding</li>
+                 <li>Music</li>
+                 <li>Memeing</li>
+             </ul>
+            </details>
+         </section>
+
+         <dialog id="mydialog">
+             This is a dialog
+             <a href="javascript:mydialog.removeAttribute('open')">close</a>
+         </dialog>
+
+         <a href="javascript:document.querySelector('#mydialog').setAttribute('open', true)">
+             Open Dialog
+         </a>
         </article>
     </body>
 </html>
